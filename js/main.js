@@ -50,8 +50,11 @@ function getTotalPrice() {
 function matchPromoCode() {
   const promoInput = document.getElementById("promo-input");
   const grandTotal = document.getElementById("grand-total");
+  const promoButton = document.getElementById("promo-btn");
   // matching promo code
   if (promoInput.value == "stevekaku") {
+    // disableing promo button if right promo code entered
+    promoButton.setAttribute("disabled", true);
     // calculating discount and setting total after discount
     const discount = grandTotal.innerText * 0.2;
     const total = grandTotal.innerText - discount;

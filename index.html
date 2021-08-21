@@ -123,11 +123,13 @@
                     <th>Delivery charge</th>
                     <td>$<span id="delivery-charge">0</span></td>
                   </tr>
+                </tbody>
+                <tfoot>
                   <tr>
                     <th>Total Price</th>
                     <td>$<span id="total-price">1299</span></td>
                   </tr>
-                </tbody>
+                </tfoot>
               </table>
             </div>
             <!-----------------------
@@ -136,7 +138,11 @@
             <div>
               <p>Add promo code</p>
               <input id="promo-input" type="text" />
-              <button onclick="matchPromoCode()" class="btn btn-danger">
+              <button
+                id="promo-btn"
+                onclick="matchPromoCode()"
+                class="btn btn-danger"
+              >
                 Apply
               </button>
             </div>
